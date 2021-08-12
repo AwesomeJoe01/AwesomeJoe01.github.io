@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="author" content="Jovanni Avila">
+        <meta name="description" content="Headers, Texts, Lists">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Cheat Sheet</title>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <!--
+        <header>
+            <nav>
+                <h1>Site Navigation</h1>
+                <ul>
+                    <li><a href="#headers">Header Elements</a></li>
+                    <li><a href="#texts">Text Elements</a></li>
+                    <li><a href="#lists">List Elements</a></li>
+                </ul>
+            </nav>
+        </header>
+        -->
+        <main>
+            <div id="title">
+                <img src="html.png" width="100px" height="100px">
+                <h1>HTML Basics Reference Sheet</h1>
+            </div>
+            <hr>
+            <h2 class="tag">Section Header Tags</h2>
+            <table id="headers">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;h1&gt;</td>
+                        <td>The most important header.<br>It is recommended to only have one per page.</td>
+                        <td><h1>Insert text here!</h1></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h2&gt;</td>
+                        <td>The second most important header.<br>Used between h1 and h3 tags.</td>
+                        <td><h2>Insert text here!</h2></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h3&gt;</td>
+                        <td>The third most important header.<br>Used between h2 and h4 tags.</td>
+                        <td><h3>Insert text here!</h3></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h4&gt;</td>
+                        <td>The fourth most important header.<br>Used between h3 and h5 tags.</td>
+                        <td><h4>Insert text here!</h4></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h5&gt;</td>
+                        <td>The fifth most important header.<br>Used between h4 and h6 tags.</td>
+                        <td><h5>Insert text here!</h5></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h6&gt;</td>
+                        <td>The least important header.<br>Used beneath all other tags.</td>
+                        <td><h6>Insert text here!</h6></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="tag">Text Tags</h2>
+            <table id="texts">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Contains and displays a paragraph of text.</td>
+                        <td><p>Insert text here!</p></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;span&gt;</td>
+                        <td>An inline container for a portion of text.<br>Does nothing without CSS styling.</td>
+                        <td><p>Insert <span>text</span> here!</p></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;em&gt;</td>
+                        <td>Emphasizes, or italicizes, a portion of text.</td>
+                        <td><p>Insert <em>text</em> here!</p></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;strong&gt;</td>
+                        <td>Highlights a portion of text by making it bold.</td>
+                        <td><p>Insert <strong>text</strong> here!</p></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>Creates a "break" between chunks of text.<br>
+                        One of the few self-closing tags in HTML5.</td>
+                        <td>Insert text<br>here!</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="tag">List Tags</h2>
+            <table id="lists">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;ul&gt;</td>
+                        <td>Creates an unordered list.<br>
+                        Each list item will start with a bullet point.</td>
+                        <td><ul><li>First</li><li>Second</li><li>Third</li></ul></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ol&gt;</td>
+                        <td>Creates an ordered list.<br>
+                        Each list item will start with a sequential numeric value.</td>
+                        <td><ol><li>First</li><li>Second</li><li>Third</li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;li&gt;</td>
+                        <td>Adds elements to a list, ordered or unordered.</td>
+                        <td><ol><li>Ordered element</li></ol><ul><li>Unordered element</li></ul></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <p>&copy;2021 Jovanni Avila</p>
+        </footer>
+    </body>
+</html>
