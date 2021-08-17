@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="author" content="Jovanni Avila">
+        <meta name="description" content="Learn HTML, CSS, and JavaScript Fundamentals">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Development Cheat Sheet</title>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li id="index"><a href="./index.html">Home</a></li>
+                    <li id="html"><a href="./html.html">HTML</a></li>
+                    <li id="css"><a href="./css.html">CSS</a></li>
+                    <li id="javascript"><a href="./js.html">Javascript</a></li>
+            </nav>
+        </header>
+
+        <main id="css-page">
+            <div id="title">
+                <img src="./CSS3_logo.svg" alt="HTML Logo" width="100px" height="100px">
+                <h1>Basics and Fundamentals</h1>
+            </div>
+            
+            <table id="headers">
+                <thead>
+                    <tr>
+                        <th colspan=4><h2 class="tag">Types of Selectors</h2></th>
+                    </tr>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Description</th>
+                        <th>Sample Input</th>
+                        <th>Sample Output</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>p</td>
+                        <td>The CSS <em>type selector</em>. Selects all &lt;p&gt; elements in an HTML document in this case.</td>
+                        <td>p {<br>&nbsp;&nbsp;&nbsp;&nbsp;color: rgb(41, 101, 241);<br>}</td>
+                        <td><p style="color:rgb(41, 101, 241);">This is a paragraph element.</p></td>
+                    </tr>
+                    <tr>
+                        <td>.class</td>
+                        <td>The CSS <em>class selector</em>. Selects all elements with the attribute class="class" in this case.</td>
+                        <td>.class {<br>&nbsp;&nbsp;&nbsp;&nbsp;text-transform: uppercase;<br>}</td>
+                        <td><p class="class" style="text-transform: uppercase;">this paragraph element with class "class" was typed in lowercase letters.</p></td>
+                    </tr>
+                    <tr>
+                        <td>#id</td>
+                        <td>The CSS <em>ID selector</em>. Selects the element with attribute id="id" in this case.</td>
+                        <td>#id {<br>&nbsp;&nbsp;&nbsp;&nbsp;font-weight: bold;<br>}</td>
+                        <td><p id="id" style="font-weight: bold;">This paragraph element has an id attribute with a value of "id".</p></td>
+                    </tr>
+                    <tr>
+                        <td>p.class</td>
+                        <td>The CSS <em>chain selector</em>. Selects all &lt;p&gt; elements with class "class" in this case.</td>
+                        <td>p.class {<br>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 18px;<br>}</td>
+                        <td><p class="class" style="font-size: 18px;">&lt;p&gt; element with class "class".</p><p>&lt;p&gt; element with no class. <span class="class">&lt;span&gt; element with class "class".</span></p></td>
+                    </tr>
+                    <tr>
+                        <td>ul li</td>
+                        <td>The CSS <em>descendant selector</em>. Selects all &lt;li&gt; elements descended from a &lt;ul&gt; element in this case.</td>
+                        <td>ul li {<br>&nbsp;&nbsp;&nbsp;&nbsp;list-style: square;<br>}</td>
+                        <td><ul><li style="list-style:square;">Unordered list index</li></ul><ol><li>Ordered list index</li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>p, span</td>
+                        <td>The CSS <em>multiple selector</em>. Selects all &lt;p&gt; and &lt;span&gt; elements without the need for separate selectors in this case.</td>
+                        <td>p, span {<br>&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: underline;<br>}</td>
+                        <td><p style="text-decoration:underline;">I'm a paragraph element!</p><span style="text-decoration:underline;">I'm a span element!</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="texts">
+                <thead>
+                    <tr>
+                        <th colspan=4><h2 class="tag">Properties of the Box Model</h2></th>
+                    </tr>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>Sample Input</th>
+                        <th>Sample Output</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>padding</td>
+                        <td>The space between the content area and the border. Shortcut for padding-top, padding-right, padding-bottom, and padding-left.</td>
+                        <td>&lt;p style="padding: 10px;"&gt;This is an inline selector!&lt;/p&gt;</td>
+                        <td><p style="padding: 10px;">This is an inline selector!</p></td>
+                    </tr>
+                    <tr>
+                        <td>margin</td>
+                        <td>The amount of spacing outside of an element's border. Shortcut for margin-top, margin-right, margin-bottom, and margin-left.</td>
+                        <td>&lt;p&gt;The following word will have extra spacing: &lt;/p&gt;&lt;p style="margin: 10px;"&gt;potatoes&lt;/p&gt;</td>
+                        <td><p>The following word will have extra spacing: </p><p style="margin: 10px;">potatoes</p></td>
+                    </tr>
+                    <tr>
+                        <td>border</td>
+                        <td>Surrounds the content area and padding of an element. The style, color, and thickness are customizable.</td>
+                        <td>&lt;p style="border: 1px solid black;"&gt;This paragraph has a thin black border.&lt;/p&gt;</td>
+                        <td><p style="border: 1px solid black;">This paragraph has a thin black border.</p></td>
+                    </tr>
+                    <tr>
+                        <td>overflow</td>
+                        <td>Determines how to render content that overflows its parent's content area.</td>
+                        <td>&lt;div style="width: 100px; height: 100px; background-color: #f2f2f2; overflow: scroll; overflow-x: hidden;"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/div&gt;</td>
+                        <td><div style="width: 100px; height: 100px; background-color: #f2f2f2; overflow: scroll; overflow-x: hidden;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></td>
+                    </tr>
+                    <tr>
+                        <td>visibility</td>
+                        <td>Hides or shows elements.</td>
+                        <td>&lt;p&gt;This &lt;span style="visibility: hidden;"&gt;word&lt;/span&gt; is gone?&lt;/p&gt;</td>
+                        <td><p>This <span style="visibility: hidden;">word</span> is gone?</p></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table id="lists">
+                <thead>
+                    <tr>
+                        <th colspan=4><h2 class="tag">Representing Colors</h2></th>
+                    </tr>
+                    <tr>
+                        <th>Syntax</th>
+                        <th>Description</th>
+                        <th>Sample Input</th>
+                        <th>Sample Output</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Color Name Keywords</td>
+                        <td>Named colors can be used to set property values for elements in CSS; there are 147 colors to choose from!</td>
+                        <td>p {<br>&nbsp;&nbsp;&nbsp;&nbsp;color: floralwhite;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: darkslateblue;<br>}</td>
+                        <td><p style="color: floralwhite; background-color: darkslateblue;">The quick brown fox jumps over the lazy dog</p></td>
+                    </tr>
+                    <tr>
+                        <td>HSL Colors</td>
+                        <td>Uses <code>hsl()</code> syntax to declare the color's hue (0-360), saturation (0-100%), and lightness (0-100%).</td>
+                        <td>p {<br>&nbsp;&nbsp;&nbsp;&nbsp;color: hsl(250, 70%, 50%);<br>}</td>
+                        <td><p style="color: hsl(250, 70%, 50%);">You know like, caught you down bad.</p></td>
+                    </tr>
+                    <tr>
+                        <td>RGB Colors</td>
+                        <td>Uses <code>rgb()</code> syntax to declare the color's red (0-255), blue (0-255), and green (0-255) values.</td>
+                        <td>p {<br>&nbsp;&nbsp;&nbsp;&nbsp;color: rgb(255, 0, 255);<br>}</td>
+                        <td><p style="color: rgb(255,0,255);">I don't know what to put here...</p></td>
+                    </tr>
+                    <tr>
+                        <td>Hexadecimal Colors</td>
+                        <td>Uses <code>#F0F0F0</code> syntax to declare the color's red (1st pair), blue (2nd pair) and green (3rd pair) characters. 
+                            If both characters of all three colors are repeated, it can be abbreviated to three characters -- <code>#00DDFF</code> would 
+                            become <code>#0DF</code>, for example.</td>
+                        <td>p {<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #00DDFF;<br>}</td>
+                        <td><p style="color: #00DDFF;">I think that the Matrix is a really good movie!</p></td>
+                    </tr>
+                    <tr>
+                        <td>Color Alpha Values</td>
+                        <td>Alpha values (0.0-1.0) determine the transparency of colors. Available for RGB and HSL values using <code>rgba()</code> and 
+                        <code>hsla()</code> respectively. Named and hexadecimal colors do not have this feature.</td>
+                        <td>div.large {<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 100px;<br>&nbsp;&nbsp;&nbsp;&nbsp;height: 100px;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: rgba(200, 0, 0, 0.5);}<br><br>
+                            div.small {<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 50px;<br>&nbsp;&nbsp;&nbsp;&nbsp;height: 50px;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: hsla(0, 100%, 100%, 0.5);}</td>
+                        <td><div class="left" style="width: 200px; height: 100px; background-color: rgba(158, 57, 57, 0.5);">hello</div>
+                            <div class="right" style="width: 200px; height: 100px; background-color: hsla(0, 100%, 100%, 0.5); position: relative; left: 100px; bottom: 50px;">there</div></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--
+            <section>
+                <textarea rows="10" cols="100" name="code" placeholder="Insert HTML code..."></textarea>
+                <button>Convert</button>
+                <p></p>
+            </section>
+            -->
+        </main>
+        <footer>
+            <p>&copy;2021 Jovanni Avila</p>
+        </footer>
+        <script src="./main.js"></script>
+    </body>
+</html>

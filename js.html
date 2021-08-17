@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="author" content="Jovanni Avila">
+        <meta name="description" content="Learn HTML, CSS, and JavaScript Fundamentals">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Development Cheat Sheet</title>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li id="index"><a href="./index.html">Home</a></li>
+                    <li id="html"><a href="./html.html">HTML</a></li>
+                    <li id="css"><a href="./css.html">CSS</a></li>
+                    <li id="javascript"><a href="./js.html">Javascript</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="js-page">
+            <div id="title">
+                <img src="./JS_logo.svg" alt="HTML Logo" width="105px" height="105px">
+                <h1>Basics and Fundamentals</h1>
+            </div>
+            
+            <table id="headers">
+                <thead>
+                    <tr>
+                        <th colspan=4><h2 class="tag">Section Header Elements</h2></th>
+                    </tr>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Sample Input</th>
+                        <th>Sample Output</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;h1&gt;</td>
+                        <td>The most important header. It is recommended to have at most one per page.</td>
+                        <td>&lt;h1&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/h1&gt;</td>
+                        <td><h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h2&gt;</td>
+                        <td>The second most important header. Used between h1 and h3 tags.</td>
+                        <td>&lt;h2&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/h2&gt;</td>
+                        <td><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h3&gt;</td>
+                        <td>The third most important header. Used between h2 and h4 tags.</td>
+                        <td>&lt;h3&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/h3&gt;</td>
+                        <td><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h4&gt;</td>
+                        <td>The fourth most important header. Used between h3 and h5 tags.</td>
+                        <td>&lt;h4&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/h4&gt;</td>
+                        <td><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h5&gt;</td>
+                        <td>The fifth most important header. Used between h4 and h6 tags.</td>
+                        <td>&lt;h5&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/h5&gt;</td>
+                        <td><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h6&gt;</td>
+                        <td>The least important header. Used beneath all other tags.</td>
+                        <td>&lt;h6&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/h6&gt;</td>
+                        <td><h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="texts">
+                <thead>
+                    <tr>
+                        <th colspan=4><h2 class="tag">Text Elements</h2></th>
+                    </tr>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Sample Input</th>
+                        <th>Sample Output</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Contains and displays a paragraph of text.</td>
+                        <td>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;</td>
+                        <td><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;span&gt;</td>
+                        <td>An inline container for a portion of text. Does nothing without CSS styling.</td>
+                        <td>&lt;span&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/span&gt;</td>
+                        <td><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;em&gt;</td>
+                        <td>Emphasizes, or italicizes, a portion of text.</td>
+                        <td>&lt;em&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/em&gt;</td>
+                        <td><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</em></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;strong&gt;</td>
+                        <td>Highlights a portion of text by making it bold.</td>
+                        <td>&lt;strong&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/strong&gt;</td>
+                        <td><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>Creates a "break" between chunks of text.<br>
+                        One of the few self-closing tags in HTML5.</td>
+                        <td>Lorem ipsum dolor sit amet,&lt;br&gt;consectetur adipiscing elit.</td>
+                        <td>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table id="lists">
+                <thead>
+                    <tr>
+                        <th colspan=4><h2 class="tag">List Elements</h2></th>
+                    </tr>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Sample Input</th>
+                        <th>Sample Output</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;ul&gt;</td>
+                        <td>Creates an unordered list. Each list item will start with a bullet point.</td>
+                        <td>&lt;ul&gt;&lt;li&gt;Lorem&lt;/li&gt;&lt;li&gt;Ipsum&lt;/li&gt;&lt;li&gt;Dolor&lt;/li&gt;&lt;/ul&gt;</td>
+                        <td><ul><li>Lorem</li><li>Ipsum</li><li>Dolor</li></ul></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ol&gt;</td>
+                        <td>Creates an ordered list. Each list item will have a sequential numeric value.</td>
+                        <td>&lt;ol&gt;&lt;li&gt;Lorem&lt;/li&gt;&lt;li&gt;Ipsum&lt;/li&gt;&lt;li&gt;Dolor&lt;/li&gt;&lt;/ol&gt;</td>
+                        <td><ol><li>Lorem</li><li>Ipsum</li><li>Dolor</li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;li&gt;</td>
+                        <td>Adds elements to a list, ordered or unordered.</td>
+                        <td>&lt;ol&gt;&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;&lt;/ol&gt;&lt;ul&gt;&lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;&lt;/ul&gt;</td>
+                        <td><ol><li>Lorem ipsum dolor sit amet</li></ol><ul><li>Consectetur adipiscing elit</li></ul></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--
+            <section>
+                <textarea rows="10" cols="100" name="code" placeholder="Insert HTML code..."></textarea>
+                <button>Convert</button>
+                <p></p>
+            </section>
+            -->
+        </main>
+        <footer>
+            <p>&copy;2021 Jovanni Avila</p>
+        </footer>
+        <script src="./main.js"></script>
+    </body>
+</html>
