@@ -39,10 +39,23 @@ nav li {
     padding: 5px 0;
     display: inline-block;
     text-align:center;
-    border: 1px black solid;
 }
 
-ul a {
+a.wrap {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    width: 25%;
+    border: 1px black solid;
+    background-color:#333;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+li a {
     text-decoration: none;
     color:rgb(255,255,255);
 }
@@ -52,7 +65,7 @@ ul a:hover {
     cursor:pointer;
 }
 
-a {
+p a {
     color:yellowgreen
 }
 
@@ -60,19 +73,19 @@ a:hover {
     color:lightskyblue;
 }
 
-nav li:nth-of-type(1) {
+a.wrap:nth-of-type(1) {
     background-color:#333;
 }
 
-nav li:nth-of-type(2) {
+a.wrap:nth-of-type(2) {
     background-color:rgb(241, 101, 41);
 }
 
-nav li:nth-of-type(3) {
+a.wrap:nth-of-type(3) {
     background-color:rgb(41, 101, 241);
 }
 
-nav li:nth-of-type(4) {
+a.wrap:nth-of-type(4) {
     background-color:rgb(251, 222, 52);
 }
 
@@ -163,17 +176,24 @@ th {
     text-align: left;
 }
 
+#index-body {
+    height: 100%;
+    overflow: hidden;
+}
+
 #index-page {
     background: linear-gradient(-45deg, #35577D, #141E30);
     color:white;
-    height:680px;
+    height:1080px;
+    overflow: hidden;
+    box-sizing:border-box;
 }
 
 #div {
     display: flex;
-    margin:75px auto;
+    margin:120px auto;
     text-align:left;
-    margin-left:180px;
+    margin-left:260px;
 }
 
 #div div {
